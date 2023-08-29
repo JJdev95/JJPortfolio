@@ -158,13 +158,13 @@
   const typed = select('.typed')
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
+    typed_strings = typed_strings?.split(',')
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
+      typeSpeed: 110,
       backSpeed: 90,
-      backDelay: 1000
+      backDelay: 1500
     });
   }
 
