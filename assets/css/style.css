@@ -761,12 +761,12 @@ a:hover {
 .hero .hero-title {
   color: #fff;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 @media (min-width: 768px) {
   .hero .hero-title {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -795,12 +795,12 @@ a:hover {
 
 .hero-single .hero-title {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 @media (min-width: 768px) {
   .hero-single .hero-title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 
