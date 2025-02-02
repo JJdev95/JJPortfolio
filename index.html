@@ -66,20 +66,22 @@
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h2 class="hero-title ml-3 mb-3">Your Business Needs More Leads. More Sales. More Growth.
+          <h2 class="hero-title ml-3 mb-3">More Growth. More Sales. More Turnover.
           </h2>
-          <h2 class="mb-3 ml-3 text-white">I Make That Happen.</h2>
+          <h3 class="mb-3 ml-3 color-secondary text-decoration-underline">I Make That Happen!</h3>
+
+          <button class="button button-a button-rouded button-big bg-color-secondary " id="btn-scroll-to-contact"
+            href="#contact">
+            <a class="text-white" href="#contact
+            ">Yes I want that!</a>
+          </button>
+
           <h3 class="mb-3 ml-3 text-white">I Analyze, Optimize & Fix Your Business’s Biggest <span
               class="color-secondary">Weak Spots</span> – So You Make More Money.</h3>
           <h3 class="mb-4 ml-3 text-white">Get a Custom Marketing Strategy, <span class="color-secondary">Free Sample
             </span>& Action Plan! </h3>
 
-          <button  class="button button-a button-rouded button-big bg-color-secondary" href="#contact">
-            <a class="text-white" href="#contact
-            ">Let’s Get to
-            Work right away!</a>
-              
-          </button>
+
 
           <p class="hero-subtitle">
             <span class="d-none" data-typed-items="Word wizard, linguistic alchemist, attention conjurer"></span>
@@ -100,8 +102,8 @@
           <div class="col-md-5 about-left">
             <img src="assets/img/pic-of-me.jpg" class="img-fluid rounded b-shadow-a" alt="Jovan Josifoski" />
             <h3 class="about-heading">Helping Businesses Scale with Proven Marketing Strategies</h3>
-            <ul class="about-list">
-              <li>✅ 5+ Years Experience in Digital Marketing</li>
+            <ul class="about-list text-start">
+              <li>✅ 3+ Years Experience in Digital Marketing</li>
               <li>✅ Expert in SEO, Email, & Social Media Marketing</li>
               <li>✅ Proven Track Record of Increasing Sales</li>
             </ul>
@@ -119,16 +121,16 @@
               you dominate your market.
             </p>
 
-            <h3>Why Work With Me?</h3>
+            <h3>Ok cool... So what makes you so different?</h3>
             <ul class="benefits-list">
               <li><strong>I Find & Fix Profit Leaks:</strong> I analyze where you're losing potential customers and make
                 sure they convert.</li>
               <li><strong>Deep Market & Customer Psychology Insight:</strong> I know exactly how to craft messaging that
-                makes people buy.</li>
-              <li><strong>Full-Service Execution:</strong> I don’t just hand you a strategy; I implement it—from running
-                social ads to optimizing landing pages.</li>
-              <li><strong>Free Sample Offer!</strong> No risk. I’ll create a sample campaign tailored to your business
-                before you commit.</li>
+                makes people buy your products.</li>
+              <li><strong>I do it all:</strong> I don’t just hand you a strategy; I implement it—from start to finish!</li>
+              <li><strong>Paid on performance:</strong> If you win I win! If you lose, I lose. You only pay me <b><i><u>if</u></i></b> I deliver you results. No hidden fees, no tricks!</li>
+              <li><strong>Free Sample Offer!</strong> No risk for you. I’ll create a sample campaign tailored to your business
+                before you commit working with me.</li>
             </ul>
 
             <!-- Call to Action -->
@@ -150,7 +152,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h2 class="section-title">What I Do</h2>
+              <h2 class="section-title">So, What do you do exactly?</h2>
               <div class="line-mf"></div>
             </div>
           </div>
@@ -417,13 +419,17 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
+            
             <div class="contact-mf">
               <div id="contact" class="box-shadow-full">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">Reach me here</h5>
+                  <div class="col-sm-12">
+                    <div class="title-box text-center">
+                      <h2 class="section-title">Contact me for a free consultation</h2>
+                      <div class="line-mf"></div>
                     </div>
+                  </div>
+                  <div class="col-md-6">
                     <div>
                       <form id="form" method="post" role="form">
                         <div class="row">
@@ -465,9 +471,6 @@
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">Get in Touch</h5>
-                    </div>
                     <div class="more-info">
                       <p>
                         Want More Clients & Revenue? Let’s Talk.
@@ -552,6 +555,18 @@
 
   <!--sent email-->
   <script>
+
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    // Example: Attach the function to a button with an onclick event
+    document.getElementById("btn-scroll-to-contact").addEventListener("click", function () {
+      scrollToSection("contact");
+    });
 
     // Function to reveal sections on scroll
     function revealSections() {
