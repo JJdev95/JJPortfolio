@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all 0.5s ease-in-out;
 }
 
@@ -460,7 +460,7 @@ a:hover {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 #header .logo {
@@ -1605,10 +1605,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;  /* Adds a subtle hover effect */
-  color: #C9A100;
-}
 
 
 /* Default state: Hidden with slight downward offset */
